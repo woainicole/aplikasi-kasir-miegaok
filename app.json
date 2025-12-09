@@ -1,17 +1,24 @@
 {
   "expo": {
-    "name": "mie-gaok",
+    "name": "Kasir Mie Gaok",
     "slug": "mie-gaok",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/mie-gaok.jpeg",
     "scheme": "miegaok",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+     "extra": {
+      "eas": {
+        "projectId": "7eadad0c-d2f5-4fec-ad41-f5a6ec7cdf67"
+      }
+    },
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.miegaok.kasir",
+      "versionCode": 1,
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -27,6 +34,7 @@
     },
     "plugins": [
       "expo-router",
+      "react-native-safe-area-context",
       [
         "expo-splash-screen",
         {
